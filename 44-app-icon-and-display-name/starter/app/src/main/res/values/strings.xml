@@ -1,0 +1,10 @@
+<resources>
+  <string name="app_name">Time Fighter</string>
+  <string name="yourScore">Your Score: %1$d</string>
+  <string name="timeLeft">Time left: %1$d</string>
+  <string name="tapMe">Tap Me</string>
+  <string name="gameOverMessage">Times up! Your score was: %1$d</string>
+  <string name="aboutMenu">About</string>
+  <string name="aboutTitle">Time Fighter %s</string>
+  <string name="aboutMessage">Created by The Mighty Kotlin Developer</string>
+</resources>
