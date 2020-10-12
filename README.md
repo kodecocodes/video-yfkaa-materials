@@ -6,6 +6,7 @@ Each edition has its own branch, named `versions/[VERSION]`. The default branch 
 
 ## Release History
 
-| Branch                                                                                   | Version | Release Date |
-| ---------------------------------------------------------------------------------------- |:-------:|:------------:|
-| [versions/2.0](https://github.com/raywenderlich/video-yfkaa-materials/tree/versions/2.0) | 2.0     | 2019-09-10   |
+| Branch                                                       | Version | Release Date |
+| ------------------------------------------------------------ | :-----: | :----------: |
+| [versions/2.1](https://github.com/raywenderlich/video-yfkaa-materials/tree/versions/2.1) |   2.1   |  2050-01-01  |
+| [versions/2.0](https://github.com/raywenderlich/video-yfkaa-materials/tree/versions/2.0) |   2.0   |  2019-09-10  |
