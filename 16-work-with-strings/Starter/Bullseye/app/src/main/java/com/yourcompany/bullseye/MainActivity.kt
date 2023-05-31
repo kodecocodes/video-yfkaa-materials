@@ -1,47 +1,27 @@
 package com.yourcompany.bullseye
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import androidx.appcompat.app.AlertDialog
-import com.yourcompany.bullseye.databinding.ActivityMainBinding
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
+import com.yourcompany.bullseye.ui.theme.BullseyeTheme
 
-class MainActivity : AppCompatActivity() {
-  private lateinit var binding: ActivityMainBinding
-
+class MainActivity : ComponentActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    binding = ActivityMainBinding.inflate(layoutInflater)
-    val view = binding.root
-    setContentView(view)
-
-    binding.hitMeButton.setOnClickListener {
-      Log.i("Button Click Event", "You clicked the Hit Me Button")
-      showResult()
+    setContent {
+      BullseyeTheme {
+        // A surface container using the 'background' color from the theme
+        Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
+          GameScreen()
+        }
+      }
     }
-
-  }
-
-  private fun showResult() {
-    val dialogTitle = getString(R.string.result_dialog_title)
-    val dialogMessage = getString(R.string.result_dialog_message)
-
-    val builder = AlertDialog.Builder(this)
-
-    builder.setTitle(dialogTitle)
-    builder.setMessage(dialogMessage)
-    builder.setPositiveButton(R.string.result_dialog_button_text) {dialog, _ ->
-      dialog.dismiss()
-    }
-
-    builder.create().show()
   }
 }
-
-
-
-
-
-
-
-
