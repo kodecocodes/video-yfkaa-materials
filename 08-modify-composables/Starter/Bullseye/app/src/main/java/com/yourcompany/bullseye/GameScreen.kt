@@ -26,7 +26,7 @@ fun GameScreen() {
       Text(text = "1")
       Slider(
         value = 0.5f,
-        valueRange = 0.1f..1f,
+        valueRange = 0.01f..1f,
         onValueChange = {}
       )
       Text(text = "100")

@@ -28,7 +28,7 @@ fun TargetSlider(
     )
     Slider(
       value = value,
-      valueRange = 0.1f..1f,
+      valueRange = 0.01f..1f,
       onValueChange = valueChanged,
       modifier = Modifier.weight(1f)
     )
